@@ -17,14 +17,12 @@ class HomeController extends Controller
         //Beauty
         $CarltonBeauty = scores::where('name', '=', 'Carlton')->sum('beauty');
         $CharlotteBeauty = scores::where('name', '=', 'Charlotte')->sum('beauty');
-        $AtehnatheTherapigBeauty = scores::where('name', '=', 'Atehna the Therapig')->sum('beauty');
+        $AtehnatheTherapigBeauty = scores::where('name', '=', 'Althea the Therapig')->sum('beauty');
         $HarrietBeauty = scores::where('name', '=', 'Harriet')->sum('beauty');
         $AnnieRoseBeauty = scores::where('name', '=', 'Annie Rose')->sum('beauty');
         $KiloBeauty = scores::where('name', '=', 'Kilo')->sum('beauty');
         $AmalaBeauty = scores::where('name', '=', 'Amala')->sum('beauty');
         $BetoBeauty = scores::where('name', '=', 'Beto')->sum('beauty');
-        $MinnieBeauty = scores::where('name', '=', 'Minnie')->sum('beauty');
-        $LadyPigglesBeauty = scores::where('name', '=', 'Lady Piggles')->sum('beauty');
         $BlinkBeauty = scores::where('name', '=', 'Blink')->sum('beauty');
         $ChanchoBeauty = scores::where('name', '=', 'Chancho')->sum('beauty');
         $MooShuBeauty = scores::where('name', '=', 'Moo Shu')->sum('beauty');
@@ -36,7 +34,7 @@ class HomeController extends Controller
         //Style
         $CarltonStyle = scores::where('name', '=', 'Carlton')->sum('style');
         $CharlotteStyle = scores::where('name', '=', 'Charlotte')->sum('style');
-        $AtehnatheTherapigStyle = scores::where('name', '=', 'Atehna the Therapig')->sum('style');
+        $AtehnatheTherapigStyle = scores::where('name', '=', 'Althea the Therapig')->sum('style');
         $HarrietStyle = scores::where('name', '=', 'Harriet')->sum('style');
         $AnnieRoseStyle = scores::where('name', '=', 'Annie Rose')->sum('style');
         $KiloStyle = scores::where('name', '=', 'Kilo')->sum('style');
@@ -55,7 +53,7 @@ class HomeController extends Controller
         //Personality
         $CarltonPersonality = scores::where('name', '=', 'Carlton')->sum('personality');
         $CharlottePersonality = scores::where('name', '=', 'Charlotte')->sum('personality');
-        $AtehnatheTherapigPersonality = scores::where('name', '=', 'Atehna the Therapig')->sum('personality');
+        $AtehnatheTherapigPersonality = scores::where('name', '=', 'Althea the Therapig')->sum('personality');
         $HarrietPersonality = scores::where('name', '=', 'Harriet')->sum('personality');
         $AnnieRosePersonality = scores::where('name', '=', 'Annie Rose')->sum('personality');
         $KiloPersonality = scores::where('name', '=', 'Kilo')->sum('personality');
@@ -265,7 +263,7 @@ class HomeController extends Controller
     }
     public function email(Request $request){
         $userInput = $request->all();
-        //dd($userInput);
+        dd($userInput);
         $email = $userInput['email'];
         
         if(!isset($email)){
@@ -286,7 +284,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['1+beauty']) || isset($userInput['1+style']) || isset($userInput['1+personality'])){
             $newScore1 = new scores;
-            $newScore1->name = 'Carlton';
+            $newScore1->name = 'Charlotte';
             if(isset($userInput['1+beauty'])){
             $newScore1->beauty = $userInput['1+beauty'];
             }
@@ -300,7 +298,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['2+beauty']) || isset($userInput['2+style']) || isset($userInput['2+personality'])){
             $newScore2 = new scores;
-            $newScore2->name = 'Charlotte';
+            $newScore2->name = 'Moo Shu';
             if(isset($userInput['2+beauty'])){
             $newScore2->beauty = $userInput['2+beauty'];
             }
@@ -314,7 +312,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['3+beauty']) || isset($userInput['3+style']) || isset($userInput['3+personality'])){
             $newScore3 = new scores;
-            $newScore3->name = 'Atehna the Therapig';
+            $newScore3->name = 'Althea the Therapig';
             if(isset($userInput['3+beauty'])){
             $newScore3->beauty = $userInput['3+beauty'];
             }
@@ -328,7 +326,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['4+beauty']) || isset($userInput['4+style']) || isset($userInput['4+personality'])){
             $newScore4 = new scores;
-            $newScore4->name = 'Harriet';
+            $newScore4->name = 'Annie Rose';
             if(isset($userInput['4+beauty'])){
             $newScore4->beauty = $userInput['4+beauty'];
             }
@@ -343,7 +341,7 @@ class HomeController extends Controller
         
         if (isset($userInput['5+beauty']) || isset($userInput['5+style']) || isset($userInput['5+personality'])){
             $newScore5 = new scores;
-            $newScore5->name = 'Annie Rose';
+            $newScore5->name = 'Amala';
             if(isset($userInput['5+beauty'])){
             $newScore5->beauty = $userInput['5+beauty'];
             }
@@ -357,7 +355,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['6+beauty']) || isset($userInput['6+style']) || isset($userInput['6+personality'])){
             $newScore6 = new scores;
-            $newScore6->name = 'Kilo';
+            $newScore6->name = 'Athea Lorraine';
             if(isset($userInput['6+beauty'])){
             $newScore6->beauty = $userInput['6+beauty'];
             }
@@ -371,7 +369,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['7+beauty']) || isset($userInput['7+style']) || isset($userInput['7+personality'])){
             $newScore7 = new scores;
-            $newScore7->name = 'Amala';
+            $newScore7->name = 'Dahlia';
             if(isset($userInput['7+beauty'])){
             $newScore7->beauty = $userInput['7+beauty'];
             }
@@ -385,7 +383,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['8+beauty']) || isset($userInput['8+style']) || isset($userInput['8+personality'])){
             $newScore8 = new scores;
-            $newScore8->name = 'Beto';
+            $newScore8->name = 'Gumbo';
             if(isset($userInput['8+beauty'])){
             $newScore8->beauty = $userInput['8+beauty'];
             }
@@ -399,7 +397,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['9+beauty']) || isset($userInput['9+style']) || isset($userInput['9+personality'])){
             $newScore9 = new scores;
-            $newScore9->name = 'Minnie';
+            $newScore9->name = 'Beto';
             if(isset($userInput['9+beauty'])){
             $newScore9->beauty = $userInput['9+beauty'];
             }
@@ -413,7 +411,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['10+beauty']) || isset($userInput['10+style']) || isset($userInput['10+personality'])){
             $newScore10 = new scores;
-            $newScore10->name = 'Lady Piggles';
+            $newScore10->name = 'Kilo';
             if(isset($userInput['10+beauty'])){
             $newScore10->beauty = $userInput['10+beauty'];
             }
@@ -455,7 +453,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['13+beauty']) || isset($userInput['13+style']) || isset($userInput['13+personality'])){
             $newScore13 = new scores;
-            $newScore13->name = 'Moo Shu';
+            $newScore13->name = 'Carlton';
             if(isset($userInput['13+beauty'])){
             $newScore13->beauty = $userInput['13+beauty'];
             }
@@ -469,7 +467,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['14+beauty']) || isset($userInput['14+style']) || isset($userInput['14+personality'])){
             $newScore14 = new scores;
-            $newScore14->name = 'Athea Lorraine';
+            $newScore14->name = 'Hammy';
             if(isset($userInput['14+beauty'])){
             $newScore14->beauty = $userInput['14+beauty'];
             }
@@ -483,7 +481,7 @@ class HomeController extends Controller
         }
         if (isset($userInput['15+beauty']) || isset($userInput['15+style']) || isset($userInput['15+personality'])){
             $newScore15 = new scores;
-            $newScore15->name = 'Hammy';
+            $newScore15->name = 'Harriet';
             if(isset($userInput['15+beauty'])){
             $newScore15->beauty = $userInput['15+beauty'];
             }
@@ -495,34 +493,7 @@ class HomeController extends Controller
             }
             $newScore15->save();
         }
-        if (isset($userInput['16+beauty']) || isset($userInput['16+style']) || isset($userInput['16+personality'])){
-            $newScore16 = new scores;
-            $newScore16->name = 'Dahlia';
-            if(isset($userInput['16+beauty'])){
-            $newScore16->beauty = $userInput['16+beauty'];
-            }
-            if(isset($userInput['16+style'])){
-            $newScore16->style = $userInput['16+style'];
-            }
-            if(isset($userInput['16+personality'])){
-            $newScore16->personality = $userInput['16+personality'];
-            }
-            $newScore16->save();
-        }
-        if (isset($userInput['17+beauty']) || isset($userInput['17+style']) || isset($userInput['17+personality'])){
-            $newScore17 = new scores;
-            $newScore17->name = 'Gumbo';
-            if(isset($userInput['17+beauty'])){
-            $newScore17->beauty = $userInput['17+beauty'];
-            }
-            if(isset($userInput['17+style'])){
-            $newScore17->style = $userInput['17+style'];
-            }
-            if(isset($userInput['17+personality'])){
-            $newScore17->personality = $userInput['17+personality'];
-            }
-            $newScore17->save();
-        }
+        
         
         return view('complete');
     }

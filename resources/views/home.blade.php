@@ -35,67 +35,67 @@
   <div class="col md-12">{{$data['name']}}<br><br>
     Beauty<br>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+beauty" name="{{$data['id']}}+beauty" value="1">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+beauty" name="{{$data['rank']}}+beauty" value="1">
     <label class="form-check-label" for="inlineradio1">1</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+beauty" name="{{$data['id']}}+beauty" value="2">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+beauty" name="{{$data['rank']}}+beauty" value="2">
     <label class="form-check-label" for="inlineradio1">2</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+beauty" name="{{$data['id']}}+beauty" value="3">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+beauty" name="{{$data['rank']}}+beauty" value="3">
     <label class="form-check-label" for="inlineradio1">3</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+beauty" name="{{$data['id']}}+beauty" value="4">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+beauty" name="{{$data['rank']}}+beauty" value="4">
     <label class="form-check-label" for="inlineradio1">4</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+beauty" name="{{$data['id']}}+beauty" value="5">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+beauty" name="{{$data['rank']}}+beauty" value="5">
     <label class="form-check-label" for="inlineradio1">5</label>
     </div>
     <br>
     Style<br>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+style" name="{{$data['id']}}+style" value="1">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+style" name="{{$data['rank']}}+style" value="1">
     <label class="form-check-label" for="inlineradio1">1</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+style" name="{{$data['id']}}+style" value="2">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+style" name="{{$data['rank']}}+style" value="2">
     <label class="form-check-label" for="inlineradio1">2</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+style" name="{{$data['id']}}+style" value="3">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+style" name="{{$data['rank']}}+style" value="3">
     <label class="form-check-label" for="inlineradio1">3</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+style" name="{{$data['id']}}+style" value="4">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+style" name="{{$data['rank']}}+style" value="4">
     <label class="form-check-label" for="inlineradio1">4</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+style" name="{{$data['id']}}+style" value="5">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+style" name="{{$data['rank']}}+style" value="5">
     <label class="form-check-label" for="inlineradio1">5</label>
     </div>
     <br>
     Personality<br>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+personality" name="{{$data['id']}}+personality" value="1">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+personality" name="{{$data['rank']}}+personality" value="1">
     <label class="form-check-label" for="inlineradio1">1</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+personality" name="{{$data['id']}}+personality" value="2">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+personality" name="{{$data['rank']}}+personality" value="2">
     <label class="form-check-label" for="inlineradio1">2</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+personality" name="{{$data['id']}}+personality" value="3">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+personality" name="{{$data['rank']}}+personality" value="3">
     <label class="form-check-label" for="inlineradio1">3</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+personality" name="{{$data['id']}}+personality" value="4">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+personality" name="{{$data['rank']}}+personality" value="4">
     <label class="form-check-label" for="inlineradio1">4</label>
     </div>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" id="{{$data['id']}}+personality" name="{{$data['id']}}+personality" value="5">
+    <input class="form-check-input" type="radio" id="{{$data['rank']}}+personality" name="{{$data['rank']}}+personality" value="5">
     <label class="form-check-label" for="inlineradio1">5</label>
     </div>
   
