@@ -19,6 +19,11 @@
 </nav>
 
 <div class="container">
+@if(isset($emailExists))
+<div class="alert alert-danger" role="alert">
+  {{$emailExists}}
+</div>
+@endif
 <form method="POST" action="/email">
     @csrf
 <div class="form-group">

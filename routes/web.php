@@ -13,3 +13,4 @@
 
 Route::get('/', 'HomeController@index');
 Route::post('/email', 'HomeController@email');
+Route::get('/admin', 'HomeController@admin');
