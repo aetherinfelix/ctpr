@@ -42,8 +42,6 @@ class HomeController extends Controller
         $KiloStyle = scores::where('name', '=', 'Kilo')->sum('style');
         $AmalaStyle = scores::where('name', '=', 'Amala')->sum('style');
         $BetoStyle = scores::where('name', '=', 'Beto')->sum('style');
-        $MinnieStyle = scores::where('name', '=', 'Minnie')->sum('style');
-        $LadyPigglesStyle = scores::where('name', '=', 'Lady Piggles')->sum('style');
         $BlinkStyle = scores::where('name', '=', 'Blink')->sum('style');
         $ChanchoStyle = scores::where('name', '=', 'Chancho')->sum('style');
         $MooShuStyle = scores::where('name', '=', 'Moo Shu')->sum('style');
@@ -61,8 +59,6 @@ class HomeController extends Controller
         $KiloPersonality = scores::where('name', '=', 'Kilo')->sum('personality');
         $AmalaPersonality = scores::where('name', '=', 'Amala')->sum('personality');
         $BetoPersonality = scores::where('name', '=', 'Beto')->sum('personality');
-        $MinniePersonality = scores::where('name', '=', 'Minnie')->sum('personality');
-        $LadyPigglesPersonality = scores::where('name', '=', 'Lady Piggles')->sum('personality');
         $BlinkPersonality = scores::where('name', '=', 'Blink')->sum('personality');
         $ChanchoPersonality = scores::where('name', '=', 'Chancho')->sum('personality');
         $MooShuPersonality = scores::where('name', '=', 'Moo Shu')->sum('personality');
@@ -79,8 +75,6 @@ class HomeController extends Controller
         $KiloTotal = $KiloPersonality+$KiloBeauty+$KiloStyle;
         $AmalaTotal = $AmalaPersonality+$AmalaBeauty+$AmalaStyle;
         $BetoTotal = $BetoPersonality+$BetoBeauty+$BetoStyle;
-        $MinnieTotal = $MinniePersonality+$MinnieBeauty+$MinnieStyle;
-        $LadyPigglesTotal = $LadyPigglesPersonality+$LadyPigglesBeauty+$LadyPigglesStyle;
         $BlinkTotal = $BlinkPersonality+$BlinkBeauty+$BlinkStyle;
         $ChanchoTotal = $ChanchoPersonality+$ChanchoBeauty+$ChanchoStyle;
         $MooShuTotal = $MooShuPersonality+$MooShuBeauty+$MooShuStyle;
@@ -98,8 +92,6 @@ class HomeController extends Controller
             'Kilo' => $KiloTotal,
             'Amala' => $AmalaTotal,
             'Beto' => $BetoTotal,
-            'Minnie' => $MinnieTotal,
-            'LadyPiggles' => $LadyPigglesTotal,
             'Blink' => $BlinkTotal,
             'Chancho' => $ChanchoTotal,
             'MooShu' => $MooShuTotal,
@@ -118,8 +110,6 @@ class HomeController extends Controller
             'Kilo' => $KiloPersonality,
             'Amala' => $AmalaPersonality,
             'Beto' => $BetoPersonality,
-            'Minnie' => $MinniePersonality,
-            'LadyPiggles' => $LadyPigglesPersonality,
             'Blink' => $BlinkPersonality,
             'Chancho' => $ChanchoPersonality,
             'MooShu' => $MooShuPersonality,
@@ -138,8 +128,6 @@ class HomeController extends Controller
             'Kilo' => $KiloBeauty,
             'Amala' => $AmalaBeauty,
             'Beto' => $BetoBeauty,
-            'Minnie' => $MinnieBeauty,
-            'LadyPiggles' => $LadyPigglesBeauty,
             'Blink' => $BlinkBeauty,
             'Chancho' => $ChanchoBeauty,
             'MooShu' => $MooShuBeauty,
@@ -158,8 +146,6 @@ class HomeController extends Controller
             'Kilo' => $KiloStyle,
             'Amala' => $AmalaStyle,
             'Beto' => $BetoStyle,
-            'Minnie' => $MinnieStyle,
-            'LadyPiggles' => $LadyPigglesStyle,
             'Blink' => $BlinkStyle,
             'Chancho' => $ChanchoStyle,
             'MooShu' => $MooShuStyle,
@@ -199,8 +185,6 @@ class HomeController extends Controller
             'KiloPersonality' => $KiloPersonality,
             'AmalaPersonality' => $AmalaPersonality,
             'BetoPersonality' => $BetoPersonality,
-            'MinniePersonality' => $MinniePersonality,
-            'LadyPigglesPersonality' => $LadyPigglesPersonality,
             'BlinkPersonality' => $BlinkPersonality,
             'ChanchoPersonality' => $ChanchoPersonality,
             'MooShuPersonality' => $MooShuPersonality,
@@ -216,8 +200,6 @@ class HomeController extends Controller
             'KiloBeauty' => $KiloBeauty,
             'AmalaBeauty' => $AmalaBeauty,
             'BetoBeauty' => $BetoBeauty,
-            'MinnieBeauty' => $MinnieBeauty,
-            'LadyPigglesBeauty' => $LadyPigglesBeauty,
             'BlinkBeauty' => $BlinkBeauty,
             'ChanchoBeauty' => $ChanchoBeauty,
             'MooShuBeauty' => $MooShuBeauty,
@@ -233,8 +215,6 @@ class HomeController extends Controller
             'KiloStyle' => $KiloStyle,
             'AmalaStyle' => $AmalaStyle,
             'BetoStyle' => $BetoStyle,
-            'MinnieStyle' => $MinnieStyle,
-            'LadyPigglesStyle' => $LadyPigglesStyle,
             'BlinkStyle' => $BlinkStyle,
             'ChanchoStyle' => $ChanchoStyle,
             'MooShuStyle' => $MooShuStyle,
@@ -250,8 +230,6 @@ class HomeController extends Controller
             'KiloTotal' => $KiloTotal,
             'AmalaTotal' => $AmalaTotal,
             'BetoTotal' => $BetoTotal,
-            'MinnieTotal' => $MinnieTotal,
-            'LadyPigglesTotal' => $LadyPigglesTotal,
             'BlinkTotal' => $BlinkTotal,
             'ChanchoTotal' => $ChanchoTotal,
             'MooShuTotal' => $MooShuTotal,
