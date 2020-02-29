@@ -13,7 +13,7 @@ class HomeController extends Controller
         return view('home', ['datas' => contestants::get()]);
     }
     public function admin(){
-        $getAll = scores::get();
+        
         //Beauty
         $CarltonBeauty = scores::where('name', '=', 'Carlton')->sum('beauty');
         $CharlotteBeauty = scores::where('name', '=', 'Charlotte')->sum('beauty');
@@ -267,6 +267,12 @@ class HomeController extends Controller
         $userInput = $request->all();
         //dd($userInput);
         $email = $userInput['email'];
+        
+        if(!isset($email)){
+            $datas = contestants::get();
+            $emailExists = 'Email is required';
+            return view('home', ['datas' => contestants::get(), 'emailExists' => $emailExists])->with($emailExists, $datas);
+        }
         $check = email::where('email', '=', $email)->get()->toArray();
         if (empty($check)){
             $newEmail = new email;
