@@ -10,7 +10,7 @@ use App\email;
 class HomeController extends Controller
 {
     public function index(){
-        return view('home', ['datas' => contestants::get()]);
+        return view('home', ['datas' => contestants::orderBy('rank', 'asc')->get()]);
     }
     public function admin(){
         

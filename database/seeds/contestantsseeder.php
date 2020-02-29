@@ -20,7 +20,7 @@ class contestantsseeder extends Seeder
             'rank' => 1
         ]);
         DB::table('contestants')->insert([
-            'name' => 'Atehna the Therapig',
+            'name' => 'Althea the Therapig',
             'rank' => 3
         ]);
         DB::table('contestants')->insert([
