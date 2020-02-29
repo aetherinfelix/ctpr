@@ -10,7 +10,9 @@ use App\email;
 class HomeController extends Controller
 {
     public function index(){
-        return view('home', ['datas' => contestants::orderBy('rank', 'asc')->get()]);
+        $datas = contestants::orderBy('rank', 'asc')->get();
+        //dd($datas);
+        return view('home', ['datas' => $datas]);
     }
     public function admin(){
         
@@ -263,7 +265,7 @@ class HomeController extends Controller
     }
     public function email(Request $request){
         $userInput = $request->all();
-        dd($userInput);
+        //dd($userInput);
         $email = $userInput['email'];
         
         if(!isset($email)){
