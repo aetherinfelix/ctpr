@@ -57,14 +57,7 @@ Personality: {{$data['AmalaPersonality']}}<br><br>
 Beauty: {{$data['BetoBeauty']}}<br>
 Style: {{$data['BetoStyle']}}<br>
 Personality: {{$data['BetoPersonality']}}<br><br>
-<h5>Minnie: {{$data['MinnieTotal']}}</h5>
-Beauty: {{$data['MinnieBeauty']}}<br>
-Style: {{$data['MinnieStyle']}}<br>
-Personality: {{$data['MinniePersonality']}}<br><br>
-<h5>Lady Piggles: {{$data['LadyPigglesTotal']}}</h5>
-Beauty: {{$data['LadyPigglesBeauty']}}<br>
-Style: {{$data['LadyPigglesStyle']}}<br>
-Personality: {{$data['LadyPigglesPersonality']}}<br><br>
+
 <h5>Blink: {{$data['BlinkTotal']}}</h5>
 Beauty: {{$data['BlinkBeauty']}}<br>
 Style: {{$data['BlinkStyle']}}<br>

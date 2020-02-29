@@ -13,11 +13,11 @@ class contestantsseeder extends Seeder
     {
         DB::table('contestants')->insert([
             'name' => 'Carlton',
-            'rank' => 1
+            'rank' => 13
         ]);
         DB::table('contestants')->insert([
             'name' => 'Charlotte',
-            'rank' => 2
+            'rank' => 1
         ]);
         DB::table('contestants')->insert([
             'name' => 'Atehna the Therapig',
@@ -25,32 +25,26 @@ class contestantsseeder extends Seeder
         ]);
         DB::table('contestants')->insert([
             'name' => 'Harriet',
-            'rank' => 4
+            'rank' => 15
         ]);
         DB::table('contestants')->insert([
             'name' => 'Annie Rose',
-            'rank' => 5
+            'rank' => 4
         ]);
         DB::table('contestants')->insert([
             'name' => 'Kilo',
-            'rank' => 6
+            'rank' => 10
         ]);
         DB::table('contestants')->insert([
             'name' => 'Amala',
-            'rank' => 7
+            'rank' => 5
         ]);
         DB::table('contestants')->insert([
             'name' => 'Beto',
-            'rank' => 8
-        ]);
-        DB::table('contestants')->insert([
-            'name' => 'Minnie',
             'rank' => 9
         ]);
-        DB::table('contestants')->insert([
-            'name' => 'Lady Piggles',
-            'rank' => 10
-        ]);
+        
+    
         DB::table('contestants')->insert([
             'name' => 'Blink',
             'rank' => 11
@@ -61,23 +55,23 @@ class contestantsseeder extends Seeder
         ]);
         DB::table('contestants')->insert([
             'name' => 'Moo Shu',
-            'rank' => 13
+            'rank' => 2
         ]);
         DB::table('contestants')->insert([
             'name' => 'Athea Lorraine',
-            'rank' => 14
+            'rank' => 6
         ]);
         DB::table('contestants')->insert([
             'name' => 'Hammy',
-            'rank' => 15
+            'rank' => 14
         ]);
         DB::table('contestants')->insert([
             'name' => 'Dahlia',
-            'rank' => 16
+            'rank' => 7
         ]);
         DB::table('contestants')->insert([
             'name' => 'Gumbo',
-            'rank' => 17
+            'rank' => 8
         ]);
     }
 }
