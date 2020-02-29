@@ -168,11 +168,22 @@ class HomeController extends Controller
             'Dahlia' => $DahliaStyle,
             'Gumbo' => $GumboStyle
         );
-        $topPersonality = array_search(max($PersonalityArray),$PersonalityArray);
-        $topBeauty = array_search(max($BeautyArray),$BeautyArray);
-        $topStyle = array_search(max($StyleArray),$StyleArray);
-        $topTotal = array_search(max($TotalArray),$TotalArray);
-       
+
+        $topPersonalityRaw = array_keys($PersonalityArray,max($PersonalityArray));
+        $topBeautyRaw = array_keys($BeautyArray,max($BeautyArray));
+        $topStyleRaw = array_keys($StyleArray,max($StyleArray));
+        $topTotalRaw = array_keys($TotalArray,max($TotalArray));
+
+        $topPersonality = implode(" ", $topPersonalityRaw);
+        $topBeauty = implode(" ", $topBeautyRaw);
+        $topStyle = implode(" ", $topStyleRaw);
+        $topTotal = implode(" ", $topTotalRaw);
+        //dd($topPersonality);
+        //$topPersonality = array_search(max($PersonalityArray),$PersonalityArray);
+        //$topBeauty = array_search(max($BeautyArray),$BeautyArray);
+        //$topStyle = array_search(max($StyleArray),$StyleArray);
+        //$topTotal = array_search(max($TotalArray),$TotalArray);
+       //dd($TotalArray);
         
 
         $data = [
@@ -231,6 +242,23 @@ class HomeController extends Controller
             'HammyStyle' => $HammyStyle,
             'DahliaStyle' => $DahliaStyle,
             'GumboStyle' => $GumboStyle,
+            'CarltonTotal' => $CarltonTotal,
+            'CharlotteTotal' => $CharlotteTotal,
+            'AtehnatheTherapigTotal' => $AtehnatheTherapigTotal,
+            'HarrietTotal' => $HarrietTotal,
+            'AnnieRoseTotal' => $AnnieRoseTotal,
+            'KiloTotal' => $KiloTotal,
+            'AmalaTotal' => $AmalaTotal,
+            'BetoTotal' => $BetoTotal,
+            'MinnieTotal' => $MinnieTotal,
+            'LadyPigglesTotal' => $LadyPigglesTotal,
+            'BlinkTotal' => $BlinkTotal,
+            'ChanchoTotal' => $ChanchoTotal,
+            'MooShuTotal' => $MooShuTotal,
+            'AtheaLorraineTotal' => $AtheaLorraineTotal,
+            'HammyTotal' => $HammyTotal,
+            'DahliaTotal' => $DahliaTotal,
+            'GumboTotal' => $GumboTotal
         ];
         //dd($data);
         return view('admin', ['data' => $data]);

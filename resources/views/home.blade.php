@@ -14,10 +14,10 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">CTPR Pig Pageant Voting</a>
+<nav class="navbar navbar-expand-lg navbar-dark text-center" style="background-color: #FF69B4;">
+   <h4 class="text-center"> CTPR Pig Pageant Voting</h4>
 </nav>
-
+<br>
 <div class="container">
 @if(isset($emailExists))
 <div class="alert alert-danger" role="alert">
@@ -102,6 +102,7 @@
   </div>
   </div>
   @endforeach
+  <br>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
